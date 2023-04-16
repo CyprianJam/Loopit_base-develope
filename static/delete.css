@@ -7,10 +7,7 @@ p {
 .buttons {
     margin-top: 30px;
     width: 100%;
-    
 }
-
-
 
 .btn_confirm{
     width: 50%;
@@ -19,19 +16,14 @@ p {
     display:flex;  
     justify-content:center;
     align-items:center;
-    
-    
-
 }
+
 .btn_confirm button {
-    
     font-size: 1.1em;
     border-radius: 6px;
-    
 }
 
-.btn_confirm button:hover {
-    font-size: 1.3em;
+.btn_confirm button:hover { 
     text-decoration: underline;
 }
 
@@ -42,21 +34,19 @@ p {
 .btn_cancel {
     font-size: 1.3em;
     border-radius: 6px;
-    float: right;
-    
-    
-}
-
-.btn_cancel:hover {
-    
-    font-size: 1.5em;
-    text-decoration: underline;
     
 }
 
 .btn_cancel a {
     color: #000;
     text-decoration: none;
-    
 }
+
+.btn_cancel a:hover {
+    text-decoration: underline;    
+}
+
+
+
+
 
