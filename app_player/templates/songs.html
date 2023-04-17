@@ -1,11 +1,13 @@
 {% extends "base.html" %}
-{% load static %}
-<link rel="stylesheet" href="{% static 'style.css' %}">
-
-
-
 {% block content %}
-    <h2> SONGS </h2>
+{% load static %}
+<link rel="stylesheet" href="{% static 'songs.css' %}">
+
+
+
+<div class="songs">
+    <h3> SONGS </h3>
+
     <div class="jumbotron">
         <ul>
             {% for song in object_list %}
@@ -18,15 +20,19 @@
                                     {{ song.band }} - {{ song.song_title }} - ({{ song.description }})
                                 </a>
                             </div>
+                            <div class="btn_update">
                             <div class="s_button">
                                 <a class="btn btn-primary btn-sm" href="{% url 'update_song' pk=song.id %}"
                                    role="button">Update
                                 </a>
                             </div>
+                            </div>
+                            <div class="btn_delete">
                              <div class="s_button">
                                 <a class="btn btn-primary btn-sm" href="{% url 'delete_song' pk=song.id %}"
                                    role="button">Delete
                                 </a>
+                            </div>
                             </div>
                         </div>
 
@@ -35,4 +41,5 @@
             {% endfor %}
         </ul>
     </div>
+</div>
 {% endblock %}

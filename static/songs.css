@@ -1,0 +1,36 @@
+h3 {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.jumbotron {
+    width: 100%;
+}
+
+.s_list a {
+    color: white;
+    text-decoration: none;
+}
+
+.s_list a:hover {
+    text-decoration: underline;
+}
+
+.s_button{
+    width: 50%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.s_button a {
+    text-decoration: none;
+}
+
+.s_button a:hover {
+    text-decoration: underline;
+}
